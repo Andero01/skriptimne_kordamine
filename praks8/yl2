@@ -1,0 +1,18 @@
+#!/bin/bash
+#
+#Täisarvude skript
+#
+read -p "Sisesta täisarv: " arvud
+if [ "arvud -gt 0 ]
+        arvud=$(($arvud * -1))
+
+summa=0
+while [ $arvud -ne 0]
+do
+        jaak=$(($arvud % 10))
+        summa=$(($summa + $jaak))
+        arvud=$(($arvud / 10))
+echo "Arvu $a summa on $summa"
+#
+#
+#Skripti lõpp
